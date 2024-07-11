@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Shwetha200/coursera-advanced-react/static/css/main.e6c13ad2.css",
+    "main.js": "/Shwetha200/coursera-advanced-react/static/js/main.e0b1603c.js",
+    "static/js/453.d192b0ca.chunk.js": "/Shwetha200/coursera-advanced-react/static/js/453.d192b0ca.chunk.js",
+    "index.html": "/Shwetha200/coursera-advanced-react/index.html",
+    "main.e6c13ad2.css.map": "/Shwetha200/coursera-advanced-react/static/css/main.e6c13ad2.css.map",
+    "main.e0b1603c.js.map": "/Shwetha200/coursera-advanced-react/static/js/main.e0b1603c.js.map",
+    "453.d192b0ca.chunk.js.map": "/Shwetha200/coursera-advanced-react/static/js/453.d192b0ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e0b1603c.js"
+  ]
+}
