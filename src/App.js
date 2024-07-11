@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 function App() {
-  
+
  const [score, setScore]= useState("10");
  //initialized to 10
  const [comment,setComment] =useState("");
@@ -15,8 +15,7 @@ const handleSubmit=(e)=>{
   }
   console.log("Form Submitted Successfully!");
   setScore("10"); //reseting the form values after submitting to the initial value
-  setComment("");//reseting the form values after submitting to the initial value
-
+  setComment("");//same
 
 }
 
