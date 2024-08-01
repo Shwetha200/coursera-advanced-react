@@ -1,4 +1,3 @@
-// Header.js
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +33,23 @@ const socials = [
 ];
 
 const Header = () => {
+  const boxRef = useRef();
+  const prevScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > prevScrollY.current) {
+        boxRef.current.style.transform = "translateY(-200px)";
+      } else {
+        boxRef.current.style.transform = "translateY(0)";
+      }
+      prevScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -47,6 +63,7 @@ const Header = () => {
 
   return (
     <Box
+      ref={boxRef}
       position="fixed"
       top={0}
       left={0}
